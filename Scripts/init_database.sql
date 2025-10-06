@@ -134,10 +134,10 @@ SELECT
 	MONTH(date_added) AS MONTH_date_added,
 	DAY(date_added) AS DAY_date_added,
 	CASE WHEN total_laid_off IS NULL THEN 1 ELSE 0 END AS total_laid_off_Missing,
-	CASE WHEN total_laid_off IS NULL THEN 1 ELSE 0 END AS percentage_laid_off_Missing ,
+	CASE WHEN Pct_num IS NULL THEN 1 ELSE 0 END AS percentage_laid_off_Missing ,
 	CASE WHEN funds_raised IS NULL THEN 1 ELSE 0 END AS funds_raised_Missing,
 	COALESCE( total_laid_off, (SELECT TOP 1 Med_total_laid_off FROM MED)) AS imp_total_laid_off,
-	COALESCE( total_laid_off, (SELECT TOP 1 Med_Pct FROM MED)) AS imp_percentage_laid_off,
+	COALESCE( Pct_num, (SELECT TOP 1 Med_Pct FROM MED)) AS imp_percentage_laid_off,
 	COALESCE( funds_raised, (SELECT TOP 1 Med_funds_raised FROM MED)) AS imp_funds_raised
 FROM CLEAN
 WHERE Row_nm = 1
