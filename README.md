@@ -1,6 +1,6 @@
 
-##👋 Hi, I'm Akeem 
-##I'm an aspiring Data Analyst passionate about transforming raw data into insights and real business impact
+## 👋 Hi, I'm Akeem 
+## I'm an aspiring Data Analyst passionate about transforming raw data into insights and real business impact
 
 # Layoffs Data Cleaning & Feature Engineering
 ## 🧰 Tools Used
