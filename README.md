@@ -1,6 +1,7 @@
 # Layoffs Data Cleaning & Feature Engineering
 ## 🧰 Tools Used
 - SQL Server (SSMS)
+- Power Query / Excel
 - GitHub (for version control)
 
 **Objective:** Clean and prepare the Layoffs dataset for predictive modeling and analysis.
