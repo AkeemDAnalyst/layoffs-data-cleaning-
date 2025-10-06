@@ -8,7 +8,26 @@
 - Power Query / Excel
 - GitHub (for version control)
 
-**Objective:** Clean and prepare the Layoffs dataset for predictive modeling and analysis.
+📊 **Project Overview**
+This project focuses on cleaning and preparing a layoffs dataset for analysis and predictive modeling.  
+It demonstrates key data cleaning techniques using SQL and Power Query — handling null values, removing duplicates, standardizing text, and creating engineered features (year, month, day).
+
+🧼 **Key Steps**
+- Created database and staging schema in SQL Server  
+- Standardized categorical fields (company, location, industry, etc.)  
+- Removed duplicates using `ROW_NUMBER()`  
+- Handled missing data using `COALESCE` and `PERCENTILE_CONT` (median imputation)  
+- Engineered date-based features for analysis readiness  
+- Created final clean view `VW_Layoff`
+
+📈 **Results**
+✅ Clean, standardized dataset  
+✅ Missing values imputed  
+✅ Ready for Power BI or predictive modeling  
+✅ Documented end-to-end workflow in both SQL and Excel Power Query  
+
+🔗 **Related Project**
+[Layoffs Data Cleaning – Power Query Version]
 
 **Contents**
 - `sql_scripts/` — SQL scripts for schema, exploration, cleaning, and view creation.
